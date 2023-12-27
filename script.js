@@ -4,17 +4,17 @@ function minDate(dates) {
 	for(let i=1;i<dates.length;i++){
 		let day=dates[i];
 
-		let year1=ans.slice(0,4).parseInt();
-		let year2=day.slice(0,4).parseInt();
+		let year1=parseInt(ans.slice(0,4));
+		let year2=parseInt(day.slice(0,4));
 
 		if(year1<year2){
-			let month=ans.slice(5,7).parseInt();
+			let month=parseInt(ans.slice(5,7));
 			ans=ans;
 			
 		}
 		else if( year1==year2){
-			let month1=ans.slice(5,7).parseInt();
-			let month2=day.slice(5,7).parseInt();
+			let month1=parseInt(ans.slice(5,7));
+			let month2=parseInt(day.slice(5,7));
 
 			if(month1<month2){
 				ans=ans;
@@ -23,8 +23,8 @@ function minDate(dates) {
 				ans=day;
 			}
 			else{
-				let date1=ans.slice(8,10).parseInt();
-				let date2=ans.slice(8,10).parseInt();
+				let date1=parseInt(ans.slice(8,10));
+				let date2=parseInt(ans.slice(8,10));
 				if(date1<date2){
 					ans=ans;
 				}
