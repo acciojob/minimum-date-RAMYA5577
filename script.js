@@ -36,7 +36,8 @@ function minDate(dates) {
 		else{
 			ans=day;
 		}
-		
+	}
+	return ans;
 }
 
 // Do not change the code
